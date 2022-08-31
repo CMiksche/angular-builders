@@ -15,7 +15,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular-builders/bazel@14.0.1-beta.0, @angular-builders/bazel@workspace:packages/bazel":
+"@angular-builders/bazel@^14.0.1, @angular-builders/bazel@workspace:packages/bazel":
   version: 0.0.0-use.local
   resolution: "@angular-builders/bazel@workspace:packages/bazel"
   dependencies:
@@ -30,7 +30,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@angular-builders/custom-webpack@14.0.1-beta.2, @angular-builders/custom-webpack@workspace:packages/custom-webpack":
+"@angular-builders/custom-webpack@^14.0.1, @angular-builders/custom-webpack@workspace:packages/custom-webpack":
   version: 0.0.0-use.local
   resolution: "@angular-builders/custom-webpack@workspace:packages/custom-webpack"
   dependencies:
@@ -49,7 +49,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@angular-builders/jest@14.0.1-beta.3, @angular-builders/jest@workspace:packages/jest":
+"@angular-builders/jest@^14.0.1, @angular-builders/jest@workspace:packages/jest":
   version: 0.0.0-use.local
   resolution: "@angular-builders/jest@workspace:packages/jest"
   dependencies:
@@ -72,7 +72,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@angular-builders/timestamp@14.0.1-beta.2, @angular-builders/timestamp@workspace:packages/timestamp":
+"@angular-builders/timestamp@^14.0.1, @angular-builders/timestamp@workspace:packages/timestamp":
   version: 0.0.0-use.local
   resolution: "@angular-builders/timestamp@workspace:packages/timestamp"
   dependencies:
@@ -2235,17 +2235,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cypress/schematic@npm:1.6.0":
-  version: 1.6.0
-  resolution: "@cypress/schematic@npm:1.6.0"
+"@cypress/schematic@npm:2.1.1":
+  version: 2.1.1
+  resolution: "@cypress/schematic@npm:2.1.1"
   dependencies:
-    "@angular-devkit/architect": ^0.1202.10
-    "@angular-devkit/core": ^12.2.10
-    "@angular-devkit/schematics": ^12.2.10
-    "@schematics/angular": ^12.2.10
+    "@angular-devkit/architect": ^0.1402.1
+    "@angular-devkit/core": ^14.2.1
+    "@angular-devkit/schematics": ^14.2.1
+    "@schematics/angular": ^14.2.1
     jsonc-parser: ^3.0.0
     rxjs: ~6.6.0
-  checksum: b15fc096d15b33485209f6ed5f0a9151f33f9e6671552ef831a2500effda4df99aceaf7a40e52d05560eaf6389157d3d6997b34ba3bde9eb68f58d327e55af53
+  peerDependencies:
+    "@angular/cli": ">=12"
+    "@angular/core": ">=12"
+  checksum: fe7aa929fa97286c5c30843727392070f76409bc17143d718596fd5f4e1bdb378ed076932ba23d042536f34ce6744165a285a311ba86807a18d99868985daaf2
   languageName: node
   linkType: hard
 
@@ -5345,7 +5348,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "bazel-example@workspace:examples/bazel"
   dependencies:
-    "@angular-builders/bazel": 14.0.1-beta.0
+    "@angular-builders/bazel": ^14.0.1
     "@angular/cli": 14.0.4
   languageName: unknown
   linkType: soft
@@ -8587,7 +8590,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "full-cycle-app@workspace:examples/custom-webpack/full-cycle-app"
   dependencies:
-    "@angular-builders/custom-webpack": 14.0.1-beta.2
+    "@angular-builders/custom-webpack": ^14.0.1
     "@angular-devkit/build-angular": 14.0.4
     "@angular/animations": 14.1.3
     "@angular/cli": 14.0.4
@@ -12379,7 +12382,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "multiple-apps@workspace:examples/jest/multiple-apps"
   dependencies:
-    "@angular-builders/jest": 14.0.1-beta.3
+    "@angular-builders/jest": ^14.0.1
     "@angular-devkit/build-angular": 14.0.4
     "@angular/animations": 14.1.3
     "@angular/cli": 14.0.4
@@ -15308,7 +15311,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sanity-app-esm@workspace:examples/custom-webpack/sanity-app-esm"
   dependencies:
-    "@angular-builders/custom-webpack": 14.0.1-beta.2
+    "@angular-builders/custom-webpack": ^14.0.1
     "@angular-devkit/build-angular": 14.0.4
     "@angular/animations": 14.1.3
     "@angular/cli": 14.0.4
@@ -15320,7 +15323,7 @@ __metadata:
     "@angular/platform-browser": 14.1.3
     "@angular/platform-browser-dynamic": 14.1.3
     "@angular/router": 14.1.3
-    "@cypress/schematic": 1.6.0
+    "@cypress/schematic": 2.1.1
     "@types/jasmine": 3.10.6
     "@types/node": 16.11.52
     cypress: 9.7.0
@@ -15342,7 +15345,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sanity-app@workspace:examples/custom-webpack/sanity-app"
   dependencies:
-    "@angular-builders/custom-webpack": 14.0.1-beta.2
+    "@angular-builders/custom-webpack": ^14.0.1
     "@angular-devkit/build-angular": 14.0.4
     "@angular/animations": 14.1.3
     "@angular/cli": 14.0.4
@@ -15686,7 +15689,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "simple-app@workspace:examples/jest/simple-app"
   dependencies:
-    "@angular-builders/jest": 14.0.1-beta.3
+    "@angular-builders/jest": ^14.0.1
     "@angular-devkit/build-angular": 14.0.4
     "@angular/animations": 14.1.3
     "@angular/cli": 14.0.4
@@ -16803,7 +16806,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "timestamp-example@workspace:examples/timestamp"
   dependencies:
-    "@angular-builders/timestamp": 14.0.1-beta.2
+    "@angular-builders/timestamp": ^14.0.1
     "@angular-devkit/build-angular": 14.0.4
     "@angular/animations": 14.1.3
     "@angular/cli": 14.0.4
@@ -16816,7 +16819,7 @@ __metadata:
     "@angular/platform-browser": 14.1.3
     "@angular/platform-browser-dynamic": 14.1.3
     "@angular/router": 14.1.3
-    "@cypress/schematic": 1.6.0
+    "@cypress/schematic": 2.1.1
     "@types/jasmine": 3.10.6
     "@types/node": 16.11.52
     cypress: 9.7.0
